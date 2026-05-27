@@ -1,18 +1,13 @@
 import logo from "@/assets/logo.png";
 import { useMenu } from "@/lib/menu/queries";
+import { useCart } from "@/lib/cart";
 import { MenuCategoryNav } from "@/components/menu/MenuCategoryNav";
 import { MenuCategorySection } from "@/components/menu/MenuCategorySection";
+import { CartDrawer } from "@/components/menu/CartDrawer";
 
-/**
- * Страница меню Aq Jaiyk.
- *
- * Подключить в роутер (см. MENU_INTEGRATION.md):
- *   <Route path="/menu" element={<MenuPage />} />
- *
- * Для Phase 2 (корзина + Kaspi Pay) — пробросить onAddItem из useCart().
- */
 export function MenuPage() {
   const { data: menu, isLoading, error } = useMenu();
+  const cart = useCart();
 
   if (isLoading) {
     return (
@@ -46,13 +41,13 @@ export function MenuPage() {
         <MenuCategoryNav categories={menu.categories} />
       </div>
 
-      <main className="space-y-10 px-4 py-6 pb-24">
+      <main className="space-y-10 px-4 py-6 pb-32">
         {menu.categories.map((cat) => (
           <MenuCategorySection
             key={cat.id}
             category={cat}
             currencySymbol={menu.currencySymbol}
-            // Phase 2: onAddItem={(item) => addToCart(item)}
+            onAddItem={(item) => cart.add(item)}
           />
         ))}
 
@@ -60,6 +55,12 @@ export function MenuPage() {
           {menu.note}
         </footer>
       </main>
+
+      <CartDrawer
+        cart={cart}
+        serviceChargePercent={menu.serviceChargePercent}
+        currencySymbol={menu.currencySymbol}
+      />
     </div>
   );
 }
