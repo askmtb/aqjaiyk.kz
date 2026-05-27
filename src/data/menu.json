@@ -1,0 +1,739 @@
+{
+  "restaurant": "Aq Jaiyk",
+  "currency": "KZT",
+  "currencySymbol": "тг",
+  "serviceChargePercent": 10,
+  "note": "Цены указаны в тенге. К итоговой сумме добавляется обслуживание 10%.",
+  "categories": [
+    {
+      "id": "breakfast",
+      "name": "Завтраки",
+      "items": [
+        {
+          "id": "blini",
+          "name": "Блины",
+          "portion": "2 шт",
+          "price": 450
+        },
+        {
+          "id": "syrniki",
+          "name": "Сырники",
+          "portion": "2 шт",
+          "price": 800
+        },
+        {
+          "id": "classic-breakfast",
+          "name": "Завтрак классический",
+          "price": 1000,
+          "description": "глазунья, сосиски, обжаренный хлеб"
+        },
+        {
+          "id": "mini-cheburek",
+          "name": "Мини-чебуреки",
+          "portion": "6 шт",
+          "price": 800
+        },
+        {
+          "id": "mini-samsa",
+          "name": "Мини-самса",
+          "portion": "6 шт",
+          "price": 900
+        },
+        {
+          "id": "omlet",
+          "name": "Омлет",
+          "price": 600,
+          "description": "яйцо, молоко, зелень"
+        },
+        {
+          "id": "bread-basket",
+          "name": "Хлебная корзина",
+          "price": 800
+        },
+        {
+          "id": "bread-white",
+          "name": "Хлеб белый",
+          "price": 20
+        },
+        {
+          "id": "bread-black",
+          "name": "Хлеб чёрный",
+          "price": 30
+        },
+        {
+          "id": "lepeshka",
+          "name": "Лепёшка",
+          "price": 350
+        },
+        {
+          "id": "bauyrsaki",
+          "name": "Бауырсаки",
+          "portion": "0,5 кг",
+          "price": 600,
+          "preorder": true
+        }
+      ]
+    },
+    {
+      "id": "soups",
+      "name": "Первые блюда",
+      "items": [
+        {
+          "id": "mushroom-puree",
+          "name": "Грибной суп-пюре",
+          "price": 1200
+        },
+        {
+          "id": "lentil-soup",
+          "name": "Чечевичный суп",
+          "price": 1200
+        },
+        {
+          "id": "shurpa",
+          "name": "Шурпа",
+          "price": 1500,
+          "description": "баранина, морковь, картофель, болгарский перец, лук, зелень"
+        },
+        {
+          "id": "borsch",
+          "name": "Борщ",
+          "price": 1200
+        },
+        {
+          "id": "tom-yam",
+          "name": "Том-ям",
+          "price": 2500,
+          "description": "сёмга, креветки, шампиньоны, чеснок, имбирь, лимон, перец чили, рис"
+        },
+        {
+          "id": "pelmeni",
+          "name": "Пельмени с бульоном",
+          "price": 1000
+        },
+        {
+          "id": "chicken-noodle",
+          "name": "Куриный суп-лапша",
+          "price": 1200
+        },
+        {
+          "id": "solyanka",
+          "name": "Солянка",
+          "price": 1500
+        }
+      ]
+    },
+    {
+      "id": "mains",
+      "name": "Вторые блюда",
+      "items": [
+        {
+          "id": "guyru-lagman",
+          "name": "Гуйру лагман",
+          "price": 2200,
+          "description": "говядина, болгарский перец, пекинская капуста, лук, чеснок, морковь, лапша"
+        },
+        {
+          "id": "tsomyan-lagman",
+          "name": "Цомян лагман",
+          "price": 2500,
+          "description": "говядина, болгарский перец, пекинская капуста, чеснок, лук, морковь, лапша обжаренные в томате или на сое"
+        },
+        {
+          "id": "manty",
+          "name": "Манты",
+          "price": 1500,
+          "description": "фарш из говядины, лук, перец, соль"
+        },
+        {
+          "id": "manty-potato",
+          "name": "Манты с картофелем",
+          "price": 1200,
+          "preorder": true,
+          "description": "фарш из говядины, картофель, лук, перец, соль"
+        },
+        {
+          "id": "thai-meat",
+          "name": "Мясо по-тайски",
+          "price": 2500
+        },
+        {
+          "id": "kotlety",
+          "name": "Котлеты",
+          "price": 600,
+          "description": "гарнир на выбор"
+        },
+        {
+          "id": "plov",
+          "name": "Плов",
+          "price": 1200
+        },
+        {
+          "id": "lamb-ribs",
+          "name": "Бараньи рёбра",
+          "price": 2300
+        },
+        {
+          "id": "djigyar",
+          "name": "Джигяр",
+          "price": 2200,
+          "description": "жаренная печень, курдюк, овощи"
+        },
+        {
+          "id": "pike-fillet",
+          "name": "Филе судака с овощами",
+          "price": 2300,
+          "preorder": true
+        },
+        {
+          "id": "chicken-mushroom-cream",
+          "name": "Курица с грибами в сливочном соусе",
+          "price": 2500
+        },
+        {
+          "id": "kuyrdak",
+          "name": "Куырдак из баранины",
+          "price": 1500
+        },
+        {
+          "id": "potato-mushrooms",
+          "name": "Картошка с грибами",
+          "price": 1800
+        },
+        {
+          "id": "tripe-veggies",
+          "name": "Требуха с овощами",
+          "price": 1200
+        }
+      ]
+    },
+    {
+      "id": "salads",
+      "name": "Салаты",
+      "items": [
+        {
+          "id": "greek",
+          "name": "Греческий",
+          "price": 1800,
+          "description": "огурцы, помидоры, болгарский перец, лук, фирменный соус, сыр фета"
+        },
+        {
+          "id": "achuchuk",
+          "name": "Ачучук",
+          "price": 1200,
+          "description": "помидоры, лук, острый перец"
+        },
+        {
+          "id": "thai-salad",
+          "name": "Тайский",
+          "price": 2000,
+          "description": "огурцы, помидоры, болгарский перец, говядина, соя, зелень"
+        },
+        {
+          "id": "tbilisi",
+          "name": "Тбилиси",
+          "price": 2500,
+          "description": "говядина, консервированная фасоль, грецкие орехи, болгарский перец, чеснок, лук"
+        },
+        {
+          "id": "nezhnost",
+          "name": "Нежность",
+          "price": 2000,
+          "description": "говяжий язык, кукуруза, огурцы, яйца, картофель пай"
+        },
+        {
+          "id": "fresh",
+          "name": "Свежий",
+          "price": 1000,
+          "description": "огурец, помидоры, редис, лук, зелень"
+        },
+        {
+          "id": "shuba",
+          "name": "Под шубой",
+          "price": 1500,
+          "description": "картофель, морковь, свёкла, сельдь, лук, яйца"
+        },
+        {
+          "id": "olivier",
+          "name": "Оливье",
+          "price": 1500,
+          "description": "картофель, морковь, солёные огурцы, горох, колбаса, яйца"
+        },
+        {
+          "id": "carrot",
+          "name": "Морковный",
+          "price": 900,
+          "description": "морковь, лук, зелень"
+        },
+        {
+          "id": "bavarian",
+          "name": "Баварский",
+          "price": 2500,
+          "description": "картофель, яйцо, маринованные огурцы, опята, шампиньоны, лук"
+        },
+        {
+          "id": "grouse-nest",
+          "name": "Гнездо глухаря",
+          "price": 2500,
+          "description": "филе курицы, копчёный огурец, яйцо, перепелиные яйца, пай"
+        },
+        {
+          "id": "caesar-classic",
+          "name": "Цезарь классический",
+          "price": 2500,
+          "description": "капуста, фирменный соус, филе курицы, перепелиные яйца, сухари"
+        },
+        {
+          "id": "caesar-shrimp",
+          "name": "Цезарь с креветками",
+          "price": 2800,
+          "description": "капуста, фирменный соус, креветки, перепелиные яйца, сухари"
+        },
+        {
+          "id": "malibu",
+          "name": "Малибу",
+          "price": 2000,
+          "description": "филе курицы, огурцы, помидоры, сыр, сухарики"
+        },
+        {
+          "id": "vinegret",
+          "name": "Винегрет",
+          "price": 1500,
+          "description": "картофель, квашеная капуста, лук, морковь, горох, свёкла"
+        }
+      ]
+    },
+    {
+      "id": "shashlyk",
+      "name": "Шашлык",
+      "items": [
+        {
+          "id": "shashlyk-lamb",
+          "name": "Баранина",
+          "price": 2000
+        },
+        {
+          "id": "shashlyk-chicken",
+          "name": "Курица",
+          "price": 1500
+        },
+        {
+          "id": "shashlyk-duck",
+          "name": "Филе утки",
+          "price": 1500
+        },
+        {
+          "id": "steak-tbone",
+          "name": "Стейк T-bone",
+          "price": 2500
+        },
+        {
+          "id": "steak-salmon",
+          "name": "Стейк сёмги",
+          "price": 4500
+        }
+      ]
+    },
+    {
+      "id": "cold-appetizers",
+      "name": "Холодные закуски",
+      "items": [
+        {
+          "id": "caucasian-cuts",
+          "name": "Кавказская нарезка",
+          "price": 2500,
+          "description": "огурцы, помидоры, болгарский перец, зелень, брынза"
+        },
+        {
+          "id": "russian-appetizer",
+          "name": "Закуска по-русски",
+          "price": 2500,
+          "description": "сельдь, квашеная капуста, маринованные огурцы, грибы, лук, картофель"
+        },
+        {
+          "id": "kazakh-delicacies",
+          "name": "Казахские деликатесы",
+          "price": 5500,
+          "description": "қазы, шұжық, кесек ет"
+        },
+        {
+          "id": "fish-plate",
+          "name": "Рыбное плато",
+          "price": 5500
+        }
+      ]
+    },
+    {
+      "id": "hot-appetizers",
+      "name": "Горячие закуски",
+      "items": [
+        {
+          "id": "chicken-nuggets",
+          "name": "Куриные нагетсы",
+          "portion": "6 шт",
+          "price": 650
+        },
+        {
+          "id": "cheese-sticks",
+          "name": "Сырные палочки",
+          "portion": "6 шт",
+          "price": 1200
+        },
+        {
+          "id": "crispy-wings",
+          "name": "Хрустящие крылышки",
+          "price": 1800
+        },
+        {
+          "id": "garlic-toasts",
+          "name": "Чесночные гренки",
+          "price": 800
+        },
+        {
+          "id": "sausage-beef",
+          "name": "Колбаски говяжьи",
+          "portion": "5 шт",
+          "price": 3500
+        },
+        {
+          "id": "sausage-lamb",
+          "name": "Колбаски бараньи",
+          "portion": "5 шт",
+          "price": 3500
+        },
+        {
+          "id": "sausage-chicken",
+          "name": "Колбаски куриные",
+          "portion": "5 шт",
+          "price": 3000
+        },
+        {
+          "id": "onion-rings",
+          "name": "Луковые кольца",
+          "price": 900
+        },
+        {
+          "id": "eggplant-rolls",
+          "name": "Баклажановые роллы",
+          "portion": "8 шт",
+          "price": 1500,
+          "preorder": true
+        },
+        {
+          "id": "zucchini-rolls",
+          "name": "Кабачковые роллы",
+          "portion": "8 шт",
+          "price": 1500,
+          "preorder": true
+        },
+        {
+          "id": "spring-rolls",
+          "name": "Спринг-роллы с курицей",
+          "price": 2500,
+          "preorder": true
+        },
+        {
+          "id": "beer-shrimp",
+          "name": "Креветки к пиву",
+          "price": 2500
+        },
+        {
+          "id": "aq-jaiyk-special",
+          "name": "Фирменная закуска «АҚ ЖАЙЫҚ»",
+          "price": 2500,
+          "preorder": true,
+          "description": "фарш из брынзы и шпината в тесте, жаренный во фритюре"
+        }
+      ]
+    },
+    {
+      "id": "pasta",
+      "name": "Паста",
+      "items": [
+        {
+          "id": "alfredo",
+          "name": "Альфредо",
+          "price": 2500,
+          "description": "паста феттучини, куриное филе, чеснок, сливки, тёртый сыр пармезан, петрушка"
+        },
+        {
+          "id": "bolognese",
+          "name": "Болоньезе",
+          "price": 2500,
+          "description": "говяжий фарш, томат, специи, паста на выбор: феттучини, спагетти, сыр пармезан"
+        },
+        {
+          "id": "pasta-shrimp",
+          "name": "Паста с креветками в сливочно-чесночном соусе",
+          "price": 3000
+        },
+        {
+          "id": "tom-yam-pasta",
+          "name": "Том-ям паста",
+          "price": 3000,
+          "description": "шампиньоны, креветки, паста Том-ям, спагетти"
+        }
+      ]
+    },
+    {
+      "id": "sides",
+      "name": "Гарниры",
+      "items": [
+        {
+          "id": "rice",
+          "name": "Рис",
+          "price": 500
+        },
+        {
+          "id": "baked-potato",
+          "name": "Картофель запечённый",
+          "price": 600
+        },
+        {
+          "id": "fries",
+          "name": "Фри",
+          "price": 600
+        },
+        {
+          "id": "grilled-veggies",
+          "name": "Овощи гриль",
+          "price": 1000
+        }
+      ]
+    },
+    {
+      "id": "sauces",
+      "name": "Соусы",
+      "items": [
+        {
+          "id": "mayo",
+          "name": "Майонез",
+          "price": 0
+        },
+        {
+          "id": "ketchup",
+          "name": "Кетчуп",
+          "price": 0
+        },
+        {
+          "id": "sour-cream",
+          "name": "Сметана",
+          "price": 0
+        }
+      ]
+    },
+    {
+      "id": "pizza",
+      "name": "Пицца",
+      "items": [
+        {
+          "id": "pepperoni",
+          "name": "Пепперони",
+          "price": 2500,
+          "description": "моцарелла, колбаса"
+        },
+        {
+          "id": "margarita",
+          "name": "Маргарита",
+          "price": 1800,
+          "description": "моцарелла, помидоры"
+        },
+        {
+          "id": "pollo-funghi",
+          "name": "Pollo e funghi",
+          "price": 3200,
+          "description": "курица с грибами, моцарелла"
+        },
+        {
+          "id": "mexicano",
+          "name": "Mexicano",
+          "price": 3200,
+          "description": "моцарелла, курица, помидоры, кукуруза, маслины, халапеньо"
+        },
+        {
+          "id": "pizza-meat",
+          "name": "Мясная",
+          "price": 3200,
+          "description": "моцарелла, говядина, копчёная колбаса, курица, помидоры, маслины"
+        },
+        {
+          "id": "four-seasons",
+          "name": "4 сезона",
+          "price": 3000,
+          "description": "моцарелла, колбаса, грибы, курица, помидоры"
+        },
+        {
+          "id": "cheese-salmon",
+          "name": "Сырный лосось",
+          "price": 3500,
+          "description": "моцарелла, лосось, маслины, творожный сыр"
+        },
+        {
+          "id": "pizza-bolognese",
+          "name": "Болоньезе",
+          "price": 3200,
+          "description": "моцарелла, помидоры, фарш"
+        },
+        {
+          "id": "hunter",
+          "name": "Охотничья",
+          "price": 3000,
+          "description": "моцарелла, охотничьи колбаски"
+        },
+        {
+          "id": "cheese-pizza",
+          "name": "Сырная",
+          "price": 2500,
+          "description": "моцарелла"
+        },
+        {
+          "id": "bon-dior",
+          "name": "Bon dior",
+          "price": 3000,
+          "description": "моцарелла, колбаса, брокколи"
+        }
+      ]
+    },
+    {
+      "id": "doners",
+      "name": "Донеры",
+      "items": [
+        {
+          "id": "max-classic",
+          "name": "Max классика",
+          "price": 1500
+        },
+        {
+          "id": "max-cheese",
+          "name": "Max сырный",
+          "price": 1650
+        },
+        {
+          "id": "max-spicy",
+          "name": "Max острый",
+          "price": 1550
+        },
+        {
+          "id": "max-garlic",
+          "name": "Max чесночный",
+          "price": 1500
+        },
+        {
+          "id": "max-cheese-spicy",
+          "name": "Max сырно-острый",
+          "price": 1700
+        },
+        {
+          "id": "mini-classic",
+          "name": "Mini классика",
+          "price": 1200
+        },
+        {
+          "id": "mini-cheese",
+          "name": "Mini сырный",
+          "price": 1450
+        },
+        {
+          "id": "mini-spicy",
+          "name": "Mini острый",
+          "price": 1300
+        },
+        {
+          "id": "mini-garlic",
+          "name": "Mini чесночный",
+          "price": 1200
+        },
+        {
+          "id": "mini-cheese-spicy",
+          "name": "Mini сырно-острый",
+          "price": 1500
+        }
+      ]
+    },
+    {
+      "id": "group-dishes",
+      "name": "Блюда на компанию",
+      "subtitle": "10–12 человек",
+      "items": [
+        {
+          "id": "kazan-kebab",
+          "name": "Казан-кебаб",
+          "price": 30000,
+          "description": "обжаренный картофель, говядина, розочки из теста"
+        },
+        {
+          "id": "group-manty",
+          "name": "Манты",
+          "price": 12000,
+          "description": "фарш из говядины, лук, специи"
+        },
+        {
+          "id": "baked-salmon",
+          "name": "Сёмга запечённая с овощами",
+          "price": 40000,
+          "description": "гарнир на выбор"
+        },
+        {
+          "id": "beef-ribs-dough",
+          "name": "Томлёные говяжьи рёбра в тесте",
+          "price": 20000,
+          "description": "говядина, слоёное тесто, картофель"
+        },
+        {
+          "id": "chicken-galantine",
+          "name": "Курица Галантин",
+          "price": 15000,
+          "description": "тушка курицы, начинённая маринованным куриным бедром, гарнир на выбор"
+        },
+        {
+          "id": "lamb-shoulder",
+          "name": "Запечённая баранья лопатка",
+          "price": 25000,
+          "description": "гарнир на выбор"
+        },
+        {
+          "id": "skewers-15",
+          "name": "Шашлычки на шпажках",
+          "portion": "15 шт",
+          "price": 15000,
+          "description": "говядина, курица, баранина-люля"
+        },
+        {
+          "id": "balgyn-et",
+          "name": "Балғын Ет",
+          "price": 20000,
+          "description": "томлёная конина, картофель"
+        },
+        {
+          "id": "tabaka",
+          "name": "Цыплёнок Табака",
+          "price": 12000,
+          "description": "цыплёнок зажарен 2 шт, гарнир на выбор"
+        }
+      ]
+    },
+    {
+      "id": "group-sets",
+      "name": "Сеты на компанию",
+      "items": [
+        {
+          "id": "meat-set",
+          "name": "Мясной сет",
+          "price": 13000,
+          "description": "шашлык: баранина, говядина, курица"
+        },
+        {
+          "id": "beer-set",
+          "name": "Пивной сет",
+          "price": 5500,
+          "description": "креветки, жареный чечил, чипсы, чесночные гренки"
+        },
+        {
+          "id": "sausage-assorted",
+          "name": "Ассорти из колбасок",
+          "price": 11000,
+          "description": "говядина, баранина, курица"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "currency": "KZT",
+  "currencySymbol": "тг",
+  "note": "Внутренний прайс на возмещение порчи имущества и боя посуды. Не показывать на гостевой странице меню.",
+  "categories": [
+    {
+      "id": "furniture-damage",
+      "name": "Порча мебели и оборудования",
+      "items": [
+        {
+          "id": "chair",
+          "name": "Стул",
+          "price": 30000
+        },
+        {
+          "id": "mirror",
+          "name": "Зеркало",
+          "price": 50000
+        },
+        {
+          "id": "sofa",
+          "name": "Диван",
+          "price": 250000
+        },
+        {
+          "id": "table",
+          "name": "Стол",
+          "price": 60000
+        },
+        {
+          "id": "door",
+          "name": "Дверь",
+          "price": 100000
+        },
+        {
+          "id": "karaoke",
+          "name": "Караоке-система",
+          "price": 650000
+        },
+        {
+          "id": "tv",
+          "name": "Телевизор",
+          "price": 450000
+        },
+        {
+          "id": "microphone",
+          "name": "Микрофон",
+          "price": 80000
+        },
+        {
+          "id": "speakers",
+          "name": "Колонки",
+          "price": 150000
+        }
+      ]
+    },
+    {
+      "id": "dishware-damage",
+      "name": "Бой посуды",
+      "items": [
+        {
+          "id": "plate",
+          "name": "Тарелка",
+          "price": 1000
+        },
+        {
+          "id": "banquet-plate",
+          "name": "Банкетные тарелки",
+          "price": 2000
+        },
+        {
+          "id": "glass",
+          "name": "Стаканы",
+          "price": 1000
+        },
+        {
+          "id": "wine-glass",
+          "name": "Фужеры",
+          "price": 1500
+        },
+        {
+          "id": "shot-glass",
+          "name": "Рюмка",
+          "price": 1000
+        },
+        {
+          "id": "teapot",
+          "name": "Чайник",
+          "price": 5000
+        },
+        {
+          "id": "kese",
+          "name": "Кесе",
+          "price": 1000
+        },
+        {
+          "id": "sauce-bowl",
+          "name": "Соусницы",
+          "price": 1500
+        },
+        {
+          "id": "ashtray",
+          "name": "Пепельницы",
+          "price": 2000
+        },
+        {
+          "id": "fruit-bowl",
+          "name": "Фруктницы",
+          "price": 8000
+        },
+        {
+          "id": "tabak",
+          "name": "Табаки",
+          "price": 5000
+        },
+        {
+          "id": "deep-bowl",
+          "name": "Глубокие блюдца",
+          "price": 4500
+        }
+      ]
+    }
+  ]
+}
