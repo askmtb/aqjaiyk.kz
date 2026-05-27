@@ -49,16 +49,15 @@ export function MenuCategoryNav({ categories }: Props) {
   }, [categories]);
 
   // Авто-прокрутка активной пилюли в видимую область nav-полосы
+  // Используем scrollTo на самом nav — не трогаем страницу
   useEffect(() => {
     if (!activeId || !navRef.current) return;
-    const btn = navRef.current.querySelector<HTMLElement>(
-      `[data-cat="${activeId}"]`,
-    );
-    btn?.scrollIntoView({
-      behavior: "smooth",
-      inline: "center",
-      block: "nearest",
-    });
+    const nav = navRef.current;
+    const btn = nav.querySelector<HTMLElement>(`[data-cat="${activeId}"]`);
+    if (!btn) return;
+    const btnCenter = btn.offsetLeft + btn.offsetWidth / 2;
+    const navCenter = nav.offsetWidth / 2;
+    nav.scrollTo({ left: btnCenter - navCenter, behavior: "smooth" });
   }, [activeId]);
 
   return (

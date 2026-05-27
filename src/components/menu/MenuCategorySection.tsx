@@ -19,7 +19,7 @@ export function MenuCategorySection({
   return (
     <section
       id={`category-${category.id}`}
-      className="scroll-mt-24"
+      className="scroll-mt-[3.5rem]"
       aria-labelledby={`heading-${category.id}`}
     >
       <header className="mb-3">
